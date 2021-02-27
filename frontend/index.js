@@ -28,6 +28,7 @@ function TodoApp() {
     const table = base.getTableByIdIfExists(tableId);
     const view = table ? table.getViewByIdIfExists(viewId) : null;
     const doneField = table ? table.getFieldByIdIfExists(doneFieldId) : null;
+    const testChange = "hello";
 
     // Don't need to fetch records if doneField doesn't exist (the field or it's parent table may
     // have been deleted, or may not have been selected yet.)
